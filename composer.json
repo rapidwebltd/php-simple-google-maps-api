@@ -1,0 +1,19 @@
+{
+    "name": "rapidwebltd/simple-google-maps-api",
+    "description": "a simple api for the google maps services",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "lgpl3",
+    "authors": [
+        {
+            "name": "Andrew Mcdonald",
+            "email": "andrew.mcdonald@rapidweb.biz"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RapidWeb\\SimpleGoogleMaps\\": "./src/"
+        }
+    }
+}
