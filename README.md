@@ -1,4 +1,4 @@
-This libary allows a user to easily communicate with the google maps api and retrieve a set of coordinates from an address.
+This library allows a user to easily communicate with the google maps api and retrieve a set of coordinates from an address.
 
 ## Installation
 To install, just run the following composer command.
