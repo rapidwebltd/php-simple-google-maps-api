@@ -11,7 +11,7 @@ Remember to include the `vendor/autoload.php` file if your framework does not do
 
 Creating the SimpleGoogleMaps Object can be done in one of two ways.
 
-The first way is to pass through jsut the api key that you are provided upon registering for the google maps api.
+The first way is to pass through just the api key that you are provided upon registering for the google maps api.
 
 
 ```php
