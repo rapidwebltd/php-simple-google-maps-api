@@ -33,7 +33,7 @@ $addressline = "10 Downing St, Westminster, London SW1A UK";
 $homeCoords = $simpleGoogleMaps->getByAddress($addressline);
 ```
 
-The above methid will return a object of type LatLong, this allows you to access the cooridates like so.
+The above method will return a object of type LatLong, this allows you to access the coordinates like so.
 
 ```php
 $latitude = $homeCoords->lat;
