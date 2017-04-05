@@ -46,7 +46,7 @@ You can also calculate the distance between two LatLong objects by using the `di
 $milesBetween = $homeCoords->distanceTo($toCoords);
 ```
 
-By default this will return the answer in miles, you may also request the distance in kilometers by adding it to the function call.
+By default this will return the answer in miles, you may also request the distance in kilometers by adding it to the method call.
 
 ```php
 $milesBetween = $homeCoords->distanceTo($toCoords,"kilometres");
