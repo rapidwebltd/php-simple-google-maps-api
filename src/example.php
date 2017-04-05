@@ -11,9 +11,9 @@ $simpleGoogleMaps = SimpleGoogleMapsFactory::getByKey("[APIKEY]");
 
 
 $homeCoords = $simpleGoogleMaps->getByAddress($addressline);
-$staffordCoords = $simpleGoogleMaps->getByAddress($addressline2);
+$toCoords = $simpleGoogleMaps->getByAddress($addressline2);
 
-$milesBetween = $homeCoords->distanceTo($staffordCoords);
+$milesBetween = $homeCoords->distanceTo($toCoords);
 
 var_dump($milesBetween);
 
