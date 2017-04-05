@@ -38,7 +38,7 @@ class SimpleGoogleMaps
     }
     $latLong = new LatLong($results->results[0]->geometry->location->lat,$results->results[0]->geometry->location->lng);
 
-    var_dump($latLong); die ;
+    return $latLong;
 
  }
 }
