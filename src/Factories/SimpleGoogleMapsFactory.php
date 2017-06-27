@@ -1,4 +1,4 @@
-<?
+<?php
 namespace RapidWeb\SimpleGoogleMaps\Factories;
 
 use RapidWeb\SimpleGoogleMaps\Objects\SimpleGoogleMaps;

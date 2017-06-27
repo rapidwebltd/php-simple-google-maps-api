@@ -1,4 +1,4 @@
-<?
+<?php
 namespace RapidWeb\SimpleGoogleMaps\Objects;
 
 use RapidWeb\SimpleGoogleMaps\Objects\BasicApiAuth;
