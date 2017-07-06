@@ -2,7 +2,8 @@
     "name": "rapidwebltd/simple-google-maps-api",
     "description": "a simple api for the google maps services",
     "require": {
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "rapidwebltd/RW-File-Cache": "^1.0"
     },
     "license": "lgpl3",
     "authors": [
