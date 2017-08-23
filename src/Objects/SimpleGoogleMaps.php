@@ -11,7 +11,7 @@ class SimpleGoogleMaps
 {
   private $authObject;
   private $baseUrl = "https://maps.googleapis.com/maps/api/";
-
+  private $allowPartialMatches = false;
   private $cache = null;
   
   public function __construct($key,$clientname,$cryptKey)
@@ -29,6 +29,11 @@ class SimpleGoogleMaps
   private function setupCache()
   {
     $this->cache = new RWFileCacheDriver;
+  }
+
+  public function allowPartialMatches()
+  {
+    $this->allowPartialMatches = true;
   }
 
   public function getByAddress($address,$format = "json")
@@ -57,6 +62,13 @@ class SimpleGoogleMaps
     if(!$results || !$results->results || !isset($results->results[0])) {
       $this->cache->delete($cacheKey);
       return null;
+    }
+
+    if (!$this->allowPartialMatches) {
+      if(isset($results->results[0]->partial_match) && $results->results[0]->partial_match) {
+        $this->cache->delete($cacheKey);
+        return null; 
+      }
     }
 
     $latLong = new LatLong($results->results[0]->geometry->location->lat,$results->results[0]->geometry->location->lng);

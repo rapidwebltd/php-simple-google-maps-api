@@ -33,6 +33,13 @@ $addressline = "10 Downing St, Westminster, London SW1A UK";
 $homeCoords = $simpleGoogleMaps->getByAddress($addressline);
 ```
 
+Optionally, you can allow partial matches to be returned if your input address is not highly accurate. You can do so with the `allowPartialMatches` method, as shown below.
+
+```php
+$simpleGoogleMaps->allowPartialMatches();
+$homeCoords = $simpleGoogleMaps->getByAddress('test address');
+```
+
 The above method will return a object of type LatLong, this allows you to access the coordinates like so.
 
 ```php
