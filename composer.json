@@ -5,7 +5,7 @@
         "guzzlehttp/guzzle": "^6.2",
         "rapidwebltd/RW-File-Cache": "^1.0"
     },
-    "license": "lgpl3",
+    "license": "LGPL-3.0-only",
     "authors": [
         {
             "name": "Andrew Mcdonald",
