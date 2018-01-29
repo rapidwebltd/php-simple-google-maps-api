@@ -10,7 +10,11 @@
         {
             "name": "Andrew Mcdonald",
             "email": "andrew.mcdonald@rapidweb.biz"
-        }
+        },
+        {
+            "name": "Jordan Hall",
+            "email": "jordan.hall@rapidweb.biz"
+        },
     ],
     "autoload": {
         "psr-4": {
