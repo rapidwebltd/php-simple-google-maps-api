@@ -14,7 +14,7 @@
         {
             "name": "Jordan Hall",
             "email": "jordan.hall@rapidweb.biz"
-        },
+        }
     ],
     "autoload": {
         "psr-4": {
